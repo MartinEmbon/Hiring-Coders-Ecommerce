@@ -1,0 +1,296 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    width:100%;
+    margin: 0 auto;
+}
+
+
+header {
+   background:navy;
+    background-image: linear-gradient(rgba(22,22,22,0), rgba(22,22,22,0.6)),url("../images/fondobf.png");
+}
+
+nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color:white;
+    height:auto;
+    align-items: center;    
+}
+
+nav .logo {
+    margin-left:1rem;
+    width:30%;
+}
+
+nav .logo img{
+    max-width:100%;
+}
+
+.logoSmall{
+    display:none;
+    width:10%;
+    margin:auto;
+    margin-top:.5rem;
+}
+
+nav .logoSmall img{
+    max-width:100%;
+}
+
+
+.navbar-links ul{
+    display:flex;
+}
+
+.navbar-links li {
+    list-style: none;
+    margin-right: 1rem;
+}
+
+.navbar-links li:hover{
+    background-color: #eee;    
+    transition:.6s ease all;
+}
+
+.navbar-links li a{
+    text-decoration:none;
+    text-transform: uppercase;
+    display:block;
+    padding:2rem 1rem;
+    color:white;
+    letter-spacing: 2px;
+    font-size:13px;
+}
+
+
+.title {
+    padding-top: 3rem;
+    height: 50vh;
+    width:100%;
+    text-align: center;
+    color:white;
+    
+}
+
+.title h3{
+    margin-bottom: 2rem;
+}
+
+.title h1,
+.title h2 {
+    margin-bottom: 1rem;
+}
+
+
+.title input {
+    height:50px;
+    padding:1rem;
+    width: 40%;    
+    border-radius:20px;
+    background-color: white;
+    border:none;
+    outline:none;    
+    position:relative;
+    margin:auto;
+    margin-bottom: 4rem;
+}
+
+input::placeholder{
+    font-size: 15px;
+}
+
+.title button{
+    height:50px;
+    width:80px;
+    border:none;
+    outline:none;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    cursor: pointer;
+    background-color: black;
+    color:white;
+    position:absolute;
+    left:65%;
+}
+
+
+
+.title p {
+    font-size:12px;
+}
+
+
+main p{
+    text-align: center;
+    font-size: 12px;
+    margin-top:1rem;
+}
+
+main h1{
+    text-align: center;
+    margin-top:2.2rem;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 95%;
+    margin:auto;
+    gap:.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.card {
+    width: 250px;
+    height:260px; 
+    position: relative;
+    background-color:rgb(191, 220, 230);
+    box-shadow: 7px 0px 14px -5px rgba(12,46,46,1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.imagen-card {
+    height: 140px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.foto-1{
+    background-image: url("../images/flagpic.png");
+}
+.foto-2{
+    background-image: url("../images/380-hero-sm.1625151960.fit_limit.size_375x211.jpg");
+}
+.foto-3{
+    background-image: url("../images/applepic.png");
+}
+.foto-4{
+    background-image: url("../images/closepic.png");
+}
+.foto-5{
+    background-image: url("../images/middlepic.png");
+}
+.foto-6{
+    background-image: url("../images/mainpic.png");
+}
+.foto-7{
+    background-image: url("../images/primepic.png");
+}
+.foto-8{
+    background-image: url("../images/thirdpic.png");
+}
+
+.card-content{
+    text-align:left;
+    padding:1rem;
+}
+
+.card-content span{
+    font-size: 13px;
+}
+
+.card-content h2{
+    margin-top:.5rem;
+    margin-bottom: .5rem;
+    color:navy;
+    font-size:20px;
+}
+
+.card-content p{
+    
+    font-size:13px;
+}
+
+footer {
+    background-color: rgb(223, 241, 248)
+}
+
+footer h1,
+footer h4{
+    text-align:center;
+    width:70%;
+    margin:auto;
+    margin-bottom: 1rem;
+}
+
+
+.trustees {
+    display:flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin:auto;    
+    align-items: flex-start;
+    
+}
+
+
+.imagen-trustee img{
+    max-width:100%;
+
+}
+
+.payment-description p {
+    margin-top:1rem;
+    font-size:13px;
+    letter-spacing: .5px;
+    line-height:20px;
+    
+}
+
+/*MEDIA FOR NAV*/
+@media screen and (max-width:960px){
+    .logo{
+        display:none;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .title{
+        width:90%;
+        height: auto;
+        margin:auto;
+        
+    }
+    .title input{
+        width:80%;        
+        margin:auto;
+        margin-bottom: 1rem;                        
+    }
+    .title button{
+        left:80%;
+    }
+    main{
+        width:90%;
+        margin:auto;
+    }
+    footer,.trustees{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .trustees{
+        width:70%;
+        margin:auto;
+        text-align: center;
+    }
+    .logoSmall{
+        display:flex;
+
+    }
+}
+
