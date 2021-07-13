@@ -1,6 +1,7 @@
 const inputEmail = document.getElementById("inputEmail")
 const btn = document.getElementById("btn")
 
+
 btn.addEventListener("click",()=>{
     const key="email"
     const value=inputEmail.value;
@@ -10,9 +11,11 @@ btn.addEventListener("click",()=>{
         console.log(key)
         console.log(value)
         inputEmail.value=" "
+        alert(`Proceso de localStorage com chave ${key}:${value} feito com sucesso!`)    
         location.reload()
         
     }
+    
     
 
 })
