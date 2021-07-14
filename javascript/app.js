@@ -9,14 +9,11 @@ btn.addEventListener("click",()=>{
     if(key && value){        
         localStorage.setItem(key,value)            
         inputEmail.value=" "
-        alert(`Proceso de localStorage com chave ${key}:${value} feito com sucesso!`)    
+        console.log(value)
         
-        for (let i=0;i <localStorage.length; i++){
-            const key=localStorage.key(i);
-            const value=localStorage.getItem(key)
-            console.log(value)
-            location.reload()
-        }
-
+        alert(`Proceso de localStorage com chave ${key}:${value} feito com sucesso!`)    
+        } else{
+            alert("Campo email obrigatório")
     }
+    location.reload()
 })
